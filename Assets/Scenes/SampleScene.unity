@@ -200,12 +200,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 186824236}
+  - component: {fileID: 186824237}
   - component: {fileID: 186824235}
   - component: {fileID: 186824234}
   - component: {fileID: 186824233}
   m_Layer: 0
-  m_Name: Capsule (3)
-  m_TagString: Untagged
+  m_Name: Enemy 2
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -339,6 +340,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &186824237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186824232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dc8861d0add16549b5fb6cbd6cb5015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &230095311
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,12 +361,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 230095315}
+  - component: {fileID: 230095316}
   - component: {fileID: 230095314}
   - component: {fileID: 230095313}
   - component: {fileID: 230095312}
   m_Layer: 0
-  m_Name: Capsule (1)
-  m_TagString: Untagged
+  m_Name: Enemy 3
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -487,6 +501,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &230095316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230095311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dc8861d0add16549b5fb6cbd6cb5015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &236432711
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,6 +524,7 @@ GameObject:
   - component: {fileID: 236432712}
   - component: {fileID: 236432713}
   - component: {fileID: 236432714}
+  - component: {fileID: 236432715}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -554,8 +581,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46d2786e19c930148a6867b98feb8f12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 20
   anim: {fileID: 0}
   triggerName: hammer
+  tagEnemy: Enemy
+--- !u!61 &236432715
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236432711}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.09764147, y: 2.3150985}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.0154703, y: 1.2513412}
+  m_EdgeRadius: 0
 --- !u!1 &360538882
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,7 +722,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360538882}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -965,12 +1039,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1608700141}
+  - component: {fileID: 1608700142}
   - component: {fileID: 1608700140}
   - component: {fileID: 1608700139}
   - component: {fileID: 1608700138}
   m_Layer: 0
-  m_Name: Capsule (2)
-  m_TagString: Untagged
+  m_Name: Enemy 1
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1104,6 +1179,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1608700142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608700137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dc8861d0add16549b5fb6cbd6cb5015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1933312649
 GameObject:
   m_ObjectHideFlags: 0

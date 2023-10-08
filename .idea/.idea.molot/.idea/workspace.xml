@@ -7,10 +7,17 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/IDamage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Attack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IDamage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hammer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
       </list>
     </option>
   </component>
@@ -56,6 +63,7 @@
       <updated>1696064051448</updated>
       <workItem from="1696064078668" duration="2607000" />
       <workItem from="1696067015121" duration="2438000" />
+      <workItem from="1696758812383" duration="1845000" />
     </task>
     <servers />
   </component>
